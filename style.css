@@ -1,0 +1,60 @@
+body {
+          font-family: Arial, sans-serif;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          margin: 0;
+          background-color: #333;
+        }
+
+        #game-container {
+          display: grid;
+          grid-template-columns: repeat(25, 35px);
+          grid-template-rows: repeat(15, 35px);
+          background-color: white;
+        }
+
+        .cell {
+          width: 35px;
+          height: 35px;
+          
+        }
+
+        .player {
+          background-image: url('images/player-image.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          border:1px solid #fff;
+
+        }
+
+        .monster {
+          background-image: url('images/monster-image.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        .treasure {
+          background-image: url('images/treasure-image.png');
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        .empty {
+          background-color: white;
+        }
+
+        .wall {
+          background-color: #444;
+          border: 1px solid #fff;
+        }
+
+        #score {
+          margin-top: 10px;
+          color: #fff;
+        }
